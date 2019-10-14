@@ -1,0 +1,9 @@
+
+>squid:S21890""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+csquid:S00112+"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+?squid:S1148;"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148W"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+xsquid:S1450"\Remove the "serverChannel" field and declare it as a local variable in the relevant methods.(ªÂˆşÿÿÿÿ
+Hsquid:S1135"2Complete the task associated to this TODO comment.(£°§\
+T
+squid:S106P"9Replace this use of System.out or System.err by a logger.(âÊïøÿÿÿÿ

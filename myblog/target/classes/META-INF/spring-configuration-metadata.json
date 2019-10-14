@@ -1,0 +1,48 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.shaoshuai.myblog.config.BeetlProperties",
+      "name": "beetl",
+      "type": "com.shaoshuai.myblog.config.BeetlProperties"
+    },
+    {
+      "sourceType": "com.shaoshuai.myblog.config.DruidConfig",
+      "name": "spring.datasource",
+      "sourceMethod": "druid()",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.shaoshuai.myblog.config.BeetlProperties",
+      "name": "beetl.delimiter-statement-end",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.shaoshuai.myblog.config.BeetlProperties",
+      "name": "beetl.delimiter-statement-start",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.shaoshuai.myblog.config.BeetlProperties",
+      "name": "beetl.properties",
+      "type": "java.util.Properties"
+    },
+    {
+      "sourceType": "com.shaoshuai.myblog.config.BeetlProperties",
+      "name": "beetl.resource-auto-check",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.shaoshuai.myblog.config.BeetlProperties",
+      "name": "beetl.resource-tagroot",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.shaoshuai.myblog.config.BeetlProperties",
+      "name": "beetl.resource-tagsuffix",
+      "type": "java.lang.String"
+    }
+  ]
+}

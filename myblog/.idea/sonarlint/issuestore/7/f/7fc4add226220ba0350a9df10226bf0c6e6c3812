@@ -1,0 +1,7 @@
+
+ysquid:UselessImportCheck	"IRemove this unused import 'org.springframework.web.servlet.ViewResolver'.(¸Òóˆüÿÿÿÿ8†á¼¢Ú-
+squid:S14887"aImmediately return this expression instead of assigning it to the temporary variable "converter".(ƒ·¨Š8Ú©…ŒÚ-
+squid:UselessImportCheck"^Remove this unused import 'org.springframework.web.servlet.view.InternalResourceViewResolver'.(Îøÿ‚şÿÿÿÿ8†á¼¢Ú-
+Hsquid:S1135"2Complete the task associated to this TODO comment.(£°§\
+isquid:S21841"FCast one of the operands of this multiplication operation to a "long".(¬²ÉÆıÿÿÿÿ8”ø×Ø-
+Xsquid:S47197":Replace Charset.forName() call with StandardCharsets.UTF_8(ƒ·¨Š8Ú©…ŒÚ-

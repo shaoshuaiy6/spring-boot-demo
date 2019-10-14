@@ -1,0 +1,37 @@
+
+[
+squid:S106t"9Replace this use of System.out or System.err by a logger.(öÙŠ¯ùÿÿÿÿ8©õ¢ÙÙ-
+asquid:S37529">Add a "method" parameter to this "@RequestMapping" annotation.(«À¥şüÿÿÿÿ8¾Ğ’ÚØ-
+\squid:S3752R">Add a "method" parameter to this "@RequestMapping" annotation.(ä¾Ò±8Ğ²Ë Ù-
+asquid:S37524">Add a "method" parameter to this "@RequestMapping" annotation.(¨ÖªÜúÿÿÿÿ8·ï¨Ø-
+Hsquid:S1135"2Complete the task associated to this TODO comment.(£°§\
+asquid:S3752'">Add a "method" parameter to this "@RequestMapping" annotation.(®„Èîûÿÿÿÿ8ßãÀ¸Ù-
+[
+squid:S106u"9Replace this use of System.out or System.err by a logger.(¹×šÇÿÿÿÿÿ8©õ¢ÙÙ-
+[
+squid:S106y"9Replace this use of System.out or System.err by a logger.( ÒÅ´ûÿÿÿÿ8©õ¢ÙÙ-
+asquid:S3752E">Add a "method" parameter to this "@RequestMapping" annotation.(ÖŸ¤ùÿÿÿÿ8Ã²í…Ù-
+[squid:S3752Y">Add a "method" parameter to this "@RequestMapping" annotation.(Á¼¹g8…ëĞØÙ-
+asquid:S3752?">Add a "method" parameter to this "@RequestMapping" annotation.(÷ÑÈĞüÿÿÿÿ8Ëğ¾áØ-
+isquid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(„§Ó÷8ò¢ÙÙ-
+[
+squid:S106z"9Replace this use of System.out or System.err by a logger.(’„òÖøÿÿÿÿ8©õ¢ÙÙ-
+Bsquid:S3330f"$Add the "HttpOnly" cookie attribute.(Ç¡ğÿ8á•ÑöÙ-
+V
+squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(©ˆ>8”÷ÒØÙ-
+[
+squid:S106w"9Replace this use of System.out or System.err by a logger.(º©åøÿÿÿÿ8©õ¢ÙÙ-
+V
+squid:S106v"9Replace this use of System.out or System.err by a logger.(ùĞèİ8©õ¢ÙÙ-
+[
+squid:S106~"9Replace this use of System.out or System.err by a logger.(ÔĞæ¯üÿÿÿÿ8©õ¢ÙÙ-
+=squid:S3751K"Make this method "public".(µ¾®®úÿÿÿÿ8Ëã±‹Ù-
+fsquid:S4488-"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ò“ÊÁ8‚†ø¸Ù-
+[
+squid:S106}"9Replace this use of System.out or System.err by a logger.(û™ãªùÿÿÿÿ8©õ¢ÙÙ-
+W
+squid:S106€"9Replace this use of System.out or System.err by a logger.(”¼·8©õ¢ÙÙ-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(³º¸¸8©õ¢ÙÙ-
+[
+squid:S106x"9Replace this use of System.out or System.err by a logger.(€í‰™ÿÿÿÿÿ8©õ¢ÙÙ-

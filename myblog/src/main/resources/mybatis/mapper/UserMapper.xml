@@ -1,0 +1,40 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shaoshuai.myblog.mapper.UserMapper">
+    <select id="getUserById"  parameterType="java.lang.Integer" resultType="java.util.Map">
+        select * from t_user where id = #{id};
+    </select>
+
+    <resultMap id="tUserMap" type="com.shaoshuai.myblog.entity.Tuser">
+        <result column="id" property="userId" javaType="Integer"></result>
+        <result column="username" property="userName" javaType="String"></result>
+        <result column="password" property="password" javaType="String"></result>
+    </resultMap>
+    <select id="getTuserById"  parameterType="java.lang.Integer" resultMap="tUserMap">
+        select * from t_user where id = #{id};
+    </select>
+
+    <resultMap id="userMap" type="com.shaoshuai.myblog.entity.User">
+        <result column="id" property="id" javaType="Integer"/>
+        <result column="name" property="name" javaType="String"/>
+        <result column="password" property="password" javaType="String"/>
+        <result column="per" property="per" javaType="String"/>
+        <result column="salt" property="salt" javaType="String"/>
+    </resultMap>
+
+    <select id="selectAsaltByName" parameterType="java.lang.String" resultType="java.lang.String">
+         select `salt` from user where `name`=#{name}
+    </select>
+
+    <select id="selectOneUserByName" parameterType="java.lang.String" resultMap="userMap">
+        select * from user where name=#{username}
+    </select>
+
+    <select id="selectAllUser" resultMap="userMap">
+       select * from user
+    </select>
+    <insert id="userRegister" parameterType="User">
+         insert into user (`name`,`password`,`salt`) values (#{name},#{password},#{salt})
+    </insert>
+</mapper>

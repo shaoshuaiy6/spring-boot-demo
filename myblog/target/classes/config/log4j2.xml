@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration status="ERROR" monitorInterval="30">
+<Properties>
+        <Property name="PATTERN" value="[%d{HH:mm:ss.SSS} %-5level] [%t] %c{3} - %msg%n" />
+        <property name="FILE_PATH" value="/logs/myBlog" />
+    </Properties>
+    <Appenders>
+        <!-- 控制台日志打印 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${PATTERN}"/>
+        </Console>
+        <!--Appender 2. 输出到滚动保存的文件, 触发保存日志文件的条件是日志文件大于3KB，只保存最新的10个日志-->
+        <RollingFile name="debugLog" fileName="${FILE_PATH}/my_blog_debug.log" filePattern="${FILE_PATH}/my_blog_debug-%i.log">
+            <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%-5level][%d{yyyy-MM-dd HH:mm:ss}][%F:%L] - %m%n" />
+            <SizeBasedTriggeringPolicy size="50 MB" />
+            <!-- DefaultRolloverStrategy 中的参数max，可以限制 SizeBasedTriggeringPolicy中size超出后，只保留max个存档-->
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!--Appender 3. 输出到滚动保存的文件, 触发保存日志文件的条件是每分钟第一次的日志事件。ERROR日志是按分钟产生日志 -->
+        <RollingFile name="errorLog" fileName="${FILE_PATH}/my_blog_error.log" filePattern="${FILE_PATH}/my_blog_error-%d{yyyy-MM-dd_HH-mm}.log">
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%-5level][%d{yyyy-MM-dd HH:mm:ss}][%C:%F:%L] - %m%n" />
+            <!-- 限制单个文件大小 -->
+            <SizeBasedTriggeringPolicy size="100 MB" />
+            <!-- 限制每天文件个数 -->
+            <DefaultRolloverStrategy  max="10"/>
+        </RollingFile>
+    </Appenders>
+
+    <!-- root部分定义了log4j2的默认输出级别和方式 -->
+    <loggers>
+        <!--过滤掉spring和hibernate的一些无用的debug信息-->
+        <logger name="org.springframework" level="INFO">
+        </logger>
+        <logger name="org.elasticsearch" level="INFO">
+        </logger>
+        <logger name="com.jd.jsf.gd" level="warn">
+        </logger>
+        <logger name="org.mybatis" level="INFO">
+        </logger>
+        !-- 将druid连接池的sql语句打印到日志文件中 -->
+        <logger name="druid.sql.Statement" level="debug" additivity="false">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="debugLog"/>
+        </logger>
+        <logger name="druid.sql.ResultSet" level="debug" additivity="false">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="debugLog"/>
+        </logger>
+        <root level="INFO">
+            <appender-ref ref="Console" />
+            <appender-ref ref="debugLog" />
+            <appender-ref ref="errorLog" />
+        </root>
+    </loggers>
+
+</configuration>
+
