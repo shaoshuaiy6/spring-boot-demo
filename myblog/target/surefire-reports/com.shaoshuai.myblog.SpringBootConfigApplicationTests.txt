@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.shaoshuai.myblog.SpringBootConfigApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 53.581 s <<< FAILURE! - in com.shaoshuai.myblog.SpringBootConfigApplicationTests
+testRedis(com.shaoshuai.myblog.SpringBootConfigApplicationTests)  Time elapsed: 2.165 s  <<< ERROR!
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at com.shaoshuai.myblog.SpringBootConfigApplicationTests.testRedis(SpringBootConfigApplicationTests.java:77)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at com.shaoshuai.myblog.SpringBootConfigApplicationTests.testRedis(SpringBootConfigApplicationTests.java:77)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at com.shaoshuai.myblog.SpringBootConfigApplicationTests.testRedis(SpringBootConfigApplicationTests.java:77)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.shaoshuai.myblog.SpringBootConfigApplicationTests.testRedis(SpringBootConfigApplicationTests.java:77)
+

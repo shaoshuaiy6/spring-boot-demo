@@ -31,7 +31,7 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://localhost:3306/ee19_spring_day02?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/spring_boot_demo?characterEncoding=utf-8&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initial-size: 8
