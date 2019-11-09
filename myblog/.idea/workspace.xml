@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8066a436-bb0c-458e-ae10-aaf9f29923fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.shaoshuai.myblog.SpringBootConfigApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.shaoshuai.myblog.SpringBootConfigApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.shaoshuai.myblog.SpringBootConfigApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.shaoshuai.myblog.SpringBootConfigApplicationTests.txt" afterDir="false" />
-    </list>
+    <list default="true" id="8066a436-bb0c-458e-ae10-aaf9f29923fc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +77,11 @@
       <recent name="com.shaoshuai.myblog" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\new-repository\myblog\mysql" />
       <recent name="D:\myblog\src\main\webapp\static\js\jquery" />
       <recent name="D:\myblog\src\main\webapp\WEB-INF\views\user" />
       <recent name="D:\myblog\src\main\webapp\WEB-INF\views" />
       <recent name="D:\myblog\src\main\java\com\shaoshuai\myblog\action" />
-      <recent name="D:\myblog\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -228,7 +224,7 @@
       <workItem from="1570765621612" duration="4506000" />
       <workItem from="1570790208219" duration="2104000" />
       <workItem from="1570875420730" duration="1841000" />
-      <workItem from="1573282906298" duration="1371000" />
+      <workItem from="1573282906298" duration="2144000" />
     </task>
     <servers />
   </component>
